@@ -130,6 +130,6 @@
         if (preg_match('/[{}()\[\]|\\_\/<]/', $password)) {
             return false;
         }
-        return true;
+        return true;//ggggggggggggggggggggggggggggggggggggggggggggggggggggggg
     }
 
