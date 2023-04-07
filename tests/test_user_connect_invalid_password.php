@@ -1,11 +1,13 @@
 <?php
 include '../fonction.php';
-
 session_start();
-create_user("username1", "M@zzzzzz1");
-$r1 = connect_user('username1', 'mauvais_password');
-$r2 = connect_user('username1', 'M@zzzzz');
-$r3 = connect_user('username1', 'P@zzzzz');
+
+
+create_user("username2", "M@sdfsdf1");
+
+$test1 = connect_user('username2', 'mauvaismdsp');
+$test2 = connect_user('username2', 'M@zzzzz');
+$test3 = connect_user('username2', 'MM@zzzz');
 
 // printf("test1: ".$test1." test2: ".$test2." test3: ".$test3);
 
