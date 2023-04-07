@@ -71,7 +71,6 @@
                         if (verifyPassword($new_password)) {
                             $hashed_new_password = password_hash($new_password, PASSWORD_DEFAULT);
                             file_put_contents($filePath, $hashed_new_password);
-
                             return 0;
                         } else {
                             return 1; 
@@ -119,6 +118,7 @@
         if (!preg_match('/[a-z]/', $password)) {
             return false;
         }
+        // Vérification de la présence d'un chiffre
         if (!preg_match('/[0-9]/', $password)) {
             return false;
         }
@@ -131,5 +131,5 @@
             return false;
         }
         return true;
-    } 
-}
+    }
+
