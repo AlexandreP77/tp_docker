@@ -1,10 +1,10 @@
 <?php
 include '../fonction.php';
 
-create_user("username8", "@MotsdePasse?1");
-connect_user('username8', '@MotsdePasse?1');
-$test1 = disconnect_user('password1');
-// printf("r1: ".$r1);
+create_user("username9", "M@zzzzzz1");
+connect_user('username9', 'M@zzzzzz1');
+$test1 = disconnect_user('username9');
+// printf("test1: ".$test1);
 if ($test1 === 0) {
     printf("true");
 } else {
