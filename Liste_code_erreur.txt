@@ -1,0 +1,18 @@
+0 // L'utilisateur existe et le mot de passe donné est valide
+1 // L'utilisateur existe et le mot de passe donné est invalide
+2 // L'utilisateur n'existe pas
+3 // Une tentative d'injection SQL a eu lieu
+4 // Les champs sont vides
+
+0 // Le mot de passe a été mis à jour avec succès
+1// Le nouveau mot de passe ne respecte pas les critères de sécurité
+2// L'ancien mot de passe est incorrect
+3// L'utilisateur n'existe pas
+4 // Une tentative d'injection SQL a eu lieu
+5// Les champs sont vides
+
+0// L'utilisateur a été supprimé avec succès
+1 // L'utilisateur n'existe pas
+2// Une tentative d'injection SQL a eu lieu
+3// Le champ est vide
+
