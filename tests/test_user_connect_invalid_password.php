@@ -1,19 +1,15 @@
 <?php
 include '../fonction.php';
 
-// création de l'utilisateur
-$test1 = create_user("username1", "P@ssword1");
+session_start();
+create_user("username1", "M@zzzzzz1");
+$r1 = connect_user('username1', 'mauvais_password');
+$r2 = connect_user('username1', 'M@zzzzz');
+$r3 = connect_user('username1', 'P@zzzzz');
 
-// tentative de connexion avec un mot de passe erroné
-$test2 = connect_user('username1', 'wrong_password');
+// printf("test1: ".$test1." test2: ".$test2." test3: ".$test3);
 
-// tentative de connexion avec un mot de passe valide
-$test3 = connect_user('username1', '@MotsdePasse');
-
-// tentative de connexion avec un mot de passe valide, contenant un caractère spécial supplémentaire
-$test4 = connect_user('username1', '@MotsdePasse?');
-
-if ($test1 === 2 && $test2 === 1 && $test3 === 2 && $test4 === 2) {
+if ($test1 === 1 && $test2 === 1 && $test3 === 1) {
     printf("true");
 } else {
     printf("false");

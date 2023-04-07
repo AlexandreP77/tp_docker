@@ -2,11 +2,11 @@
 include '../fonction.php';
 
 create_user("username123", "P@ssword1");
-$test1 = delete_user('username@');
-$test2 = delete_user('username-');
-$test3 = delete_user('username_');
-$test4 = delete_user('username!');
-// printf("r1: ".$r1." r2: ".$r2." r3: ".$r3." r4: ".$r4);
+$test1 = delete_user('mzzzzz@');
+$test2 = delete_user('mzzzzz-');
+$test3 = delete_user('mzzzzz_');
+$test4 = delete_user('mzzzzz!');
+// printf("test1: ".$test1." test2: ".$test2." test3: ".$test3." test4: ".$test4);
 
 if ($test1 === 2 && $test2 === 2 && $test3 === 2 && $test4 === 2) {
     printf("true");
