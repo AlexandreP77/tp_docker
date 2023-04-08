@@ -6,7 +6,7 @@
     $test3 = create_user("username", "M@zzzzz!M@zzzzz!M@zzzzz!");
     $test4 = create_user("username", "M@zzzzz!M@zzzzz!M@zzzzz!M@zzzzz!M@zzzzz!M@zzzzz!");
     if ($test1 == 2 && $test2 < 2 && $test3 < 2 && $test4 == 2) {
-        printf("false");
-    } else {
         printf("true");
+    } else {
+        printf("false");
     }
