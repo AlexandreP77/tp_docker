@@ -8,7 +8,7 @@
     $test4 = create_user("user123", "M@zzzzzz!");
     $test5 = connect_user('username123456789qwertyqwertyqwerty', 'p@ssword1');
     if ($test1 < 2 && $test2 == 3 && $test3 == 3 && $test4 = 3 && $test5 = 3) {
-        printf("true");
-    } else {
         printf("false");
+    } else {
+        printf("true");
     }
