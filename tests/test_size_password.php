@@ -1,26 +1,13 @@
 <?php
     include '../fonction.php';
 
-// Test 1: création d'un utilisateur avec un mot de passe valide
-$test1 = create_user("username", "P@ss1");
-if ($test1 === true) {
-    echo "Test 1: succès\n";
-} else {
-    echo "Test 1: échec\n";
-}
+    $test1 = create_user("username", "M@zz1");
+    $test2 = create_user("username", "M@zzzzz!");
+    $test3 = create_user("username", "M@zzzzz!M@zzzzz!M@zzzzz!");
+    $test4 = create_user("username", "M@zzzzz!M@zzzzz!M@zzzzz!M@zzzzz!M@zzzzz!M@zzzzz!");
 
-// Test 2: création d'un utilisateur avec un mot de passe invalide
-$test2 = create_user("username", "@MotsdePasse?");
-if ($test2 === false) {
-    echo "Test 2: succès\n";
-} else {
-    echo "Test 2: échec\n";
-}
-
-// Test 3: création d'un utilisateur avec un mot de passe trop long
-$test3 = create_user("username", "@MotsdePasse?@MotsdePasse?");
-if ($test3 === false) {
-    echo "Test 3: succès\n";
-} else {
-    echo "Test 3: échec\n";
-}
+    if ($test1 == 2 && $test2 < 2 && $test3 < 2 && $test4 == 2) {
+        printf("true");
+    } else {
+        printf("false");
+    }
